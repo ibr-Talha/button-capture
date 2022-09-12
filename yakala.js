@@ -17,8 +17,8 @@ nesne.onmouseover = function (e) {
 
     nesne.style.left = xpos + "px";
     nesne.style.top = ypos + "px";
-    sayac % 10===0 ? window.alert(sayac + "Devam etmek istiyor musun ?") : sayac++;
-    sayac % 10===0 ? document.body.style.background = randomColor() : document.getElementById("icerik").innerHTML = "";
+    sayac == 10 ? window.alert(sayac + "Devam etmek istiyor musun ?") : "";
+    sayac % 10 == 0 ? document.body.style.background = randomColor() : document.getElementById("icerik").innerHTML = "";
     if (sayac >= 50) {
         window.alert(`${sayac} defa döndü hadi iyi geceler`);
         window.close();
